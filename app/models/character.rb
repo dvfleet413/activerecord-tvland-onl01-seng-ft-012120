@@ -7,7 +7,7 @@ class Character < ActiveRecord::Base
     "#{self.name} always says: #{self.catchphrase}"
   end
   
-  def build_show
+  def build_show(args = {})
     binding.pry
   end 
 end
