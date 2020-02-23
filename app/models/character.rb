@@ -8,6 +8,6 @@ class Character < ActiveRecord::Base
   end
   
   def build_show(args = {})
-    binding.pry
+    Show.create(name: name)
   end 
 end
