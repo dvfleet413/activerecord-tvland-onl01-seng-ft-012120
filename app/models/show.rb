@@ -10,7 +10,8 @@ class Show < ActiveRecord::Base
   def build_network(args = {})
     network = Network.new
     args.each {|key, value| network[key] = value}
-    network.show << self
+    network.shows << self
     network.save
+    network
   end 
 end
