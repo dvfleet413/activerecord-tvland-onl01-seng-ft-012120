@@ -12,5 +12,6 @@ class Character < ActiveRecord::Base
     args.each {|key, value| show[key] = value}
     show.characters << self
     show.save
+    show
   end 
 end
