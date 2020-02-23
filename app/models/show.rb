@@ -11,6 +11,6 @@ class Show < ActiveRecord::Base
     network = Network.new
     args.each {|key, value| network[key] = value}
     network.show << self
-    show.save
+    network.save
   end 
 end
